@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#015488"
+            android:orientation="vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/new_spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="italic"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/TextCategory"/>
+        
+       	<Spinner 
+        	android:id="@+id/category"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:prompt="@string/category">
+       	    
+       	</Spinner>
+        
+        <TableLayout 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:stretchColumns="0,1">
+         
+            <TableRow >
+                
+            	<TextView android:text="@string/value"/> 
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_gravity="center"
+            	    android:text="@string/date"/>
+            	
+            </TableRow>
+            
+            <TableRow >
+                
+                <EditText 
+                    android:id="@+id/value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+                
+                <Button android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="selectDate"
+                    android:text="@string/selectdate"/>
+                
+            </TableRow>
+        </TableLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"/>
+        
+        <EditText 
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/local"/>
+        
+        <EditText 
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registerSpent"
+            android:text="@string/spent"/>
+        
+    </LinearLayout>

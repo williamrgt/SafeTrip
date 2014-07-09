@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2">
+    
+    <LinearLayout
+        android:background="#015488"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/my_trips"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="italic"/>
+        
+    </LinearLayout>
+    
+    <TextView android:text="@string/destination"/>
+    
+    <EditText 
+        android:id="@+id/destination"
+        android:inputType="text"> 
+    </EditText>
+    
+    <TextView android:text="@string/type_of_trip"/>
+    <RadioGroup 
+        android:id="@+id/typeTrip"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/leisure"
+            android:checked="true"
+            android:text="@string/leisure"/>
+        
+        <RadioButton 
+            android:id="@+id/business"
+            android:layout_marginLeft="30dp"
+            android:text="@string/business"/>
+        
+    </RadioGroup>
+    
+    <TableRow >
+        
+        <TextView 
+            android:layout_gravity="center"
+            android:text="@string/dateofarrive"/>
+        
+        <TextView 
+            android:layout_gravity="center"
+            android:text="@string/dateofdeparture"/>
+    </TableRow>
+    
+    <TableRow >
+        
+        <Button 
+            android:id="@+id/dateofarrive"
+            android:onClick="selectDate"
+            android:text="@string/selectdate"/>
+        
+        <Button 
+            android:id="@+id/dateofdeparture"
+            android:onClick="selectDate"
+            android:text="@string/selectdate"/>
+        
+    </TableRow>
+    
+    <TextView android:text="@string/budget"/>
+    <EditText 
+        android:id="@+id/budget"
+        android:inputType="numberDecimal"/>
+    
+    <TableRow >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/amountofpeople"/>
+        
+        <EditText 
+            android:id="@+id/amountofpeople"
+            android:inputType="number"/>  
+    </TableRow>
+    
+    <Button 
+        android:id="@+id/save"
+        android:text="@string/save"/>
+    
+</TableLayout>

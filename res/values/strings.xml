@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">SafeTrip</string>
+	<string name="user">Login</string>
+	<string name="password">Password</string>
+	<string name="submit">Submit</string>
+	<string name="login_error">Invalid user or password!</string>
+    <string name="new_spending">New spending</string>
+	<string name="new_trip">New trip</string>
+	<string name="my_trips">My trips</string>
+	<string name="configs">Configurations</string>
+	<string name="destination">Destination</string>
+	<string name="type_of_trip">Type of trip</string>
+	<string name="leisure">Leisure</string>
+	<string name="business">Business</string>
+	<string name="dateofarrive">Date of arrive</string>
+    <string name="dateofdeparture">Date of departure</string>
+    <string name="selectdate">Selecione data</string>
+	<string name="budget">Budget</string>
+    <string name="amountofpeople">How many people</string>
+    <string name="save">Save</string>
+    <string name="new_spent">New spent</string>
+    <string name="value">Value</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="local">Local</string>
+    <string name="spent">Spent</string>
+    <string name="TextCategory">Category</string>
+	<string-array name="category_spent">
+	    <item>Feed</item>
+	    <item>Fuel</item>
+	    <item>Transport</item>
+	    <item>Accomodation</item>
+	    <item>Others</item>
+	</string-array>
+    <string name="category">Category</string>
+	<string name="exit">Exit</string>
+	<string name="new_spend">New spend</string>
+    <string name="remove_trip">Remove trip</string>
+	<string name="dialog_edit">Edit</string>
+    <string name="dialog_spents">Spents</string>
+	<string name="dialog_remove">Remove</string>
+    <string name="dialog_options"></string>
+	<string name="confirm">Are you sure?</string>
+	<string name="positive">Yes</string>
+	<string name="negative">No</string>
+    
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title">#015488</color>
+    <color name="category_feed">#9FC5F8</color>
+    <color name="category_accomodation">#0099CC</color>
+    <color name="category_transport">#0099CC</color>
+    <color name="category_others">#ACBFD5</color>
+    
+</resources>
