@@ -40,7 +40,7 @@
 	<string name="dialog_edit">Edit</string>
     <string name="dialog_spents">Spents</string>
 	<string name="dialog_remove">Remove</string>
-    <string name="dialog_options"></string>
+    <string name="dialog_options">Options</string>
 	<string name="confirm">Are you sure?</string>
 	<string name="positive">Yes</string>
 	<string name="negative">No</string>

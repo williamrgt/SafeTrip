@@ -84,16 +84,20 @@ public class TripListActivity extends ListActivity implements OnItemClickListene
 				break;
 			case 1:
 				startActivity(new Intent(this, SpentActivity.class));
+				break;
 			case 2:
 				startActivity(new Intent(this, SpentListActivity.class));
+				break;
 			case 3:
 				confirmDialog.show();
 				break;
 			case DialogInterface.BUTTON_POSITIVE:
 				trips.remove(tripSelected);
 				getListView().invalidateViews();
+				break;
 			case DialogInterface.BUTTON_NEGATIVE:
 				confirmDialog.dismiss();
+				break;
 		}
 	}
 	
@@ -101,7 +105,7 @@ public class TripListActivity extends ListActivity implements OnItemClickListene
 	{
 		final CharSequence[] items = {getString(R.string.dialog_edit), 
 				getString(R.string.new_spending), getString(R.string.dialog_spents), getString(R.string.dialog_remove)};
-		
+
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(R.string.dialog_options);
 		builder.setItems(items, this);
