@@ -30,35 +30,36 @@ public final class R {
         public static final int new_trip=0x7f020006;
     }
     public static final class id {
-        public static final int amountofpeople=0x7f090018;
-        public static final int budget=0x7f090017;
-        public static final int business=0x7f090014;
-        public static final int category=0x7f09000c;
+        public static final int amountofpeople=0x7f090019;
+        public static final int budget=0x7f090018;
+        public static final int business=0x7f090015;
+        public static final int category=0x7f09000d;
         public static final int configs=0x7f090003;
-        public static final int date=0x7f09000e;
-        public static final int dateofarrive=0x7f090015;
-        public static final int dateofdeparture=0x7f090016;
-        public static final int description=0x7f09000f;
-        public static final int destination=0x7f090011;
+        public static final int date=0x7f09000f;
+        public static final int dateofarrive=0x7f090016;
+        public static final int dateofdeparture=0x7f090017;
+        public static final int description=0x7f090010;
+        public static final int destination=0x7f090012;
         public static final int id_category=0x7f090005;
         public static final int id_date=0x7f090004;
         public static final int id_description=0x7f090006;
         public static final int id_destination=0x7f090009;
-        public static final int id_menu=0x7f09001a;
+        public static final int id_menu=0x7f09001b;
         public static final int id_value=0x7f090007;
-        public static final int leisure=0x7f090013;
-        public static final int local=0x7f090010;
+        public static final int leisure=0x7f090014;
+        public static final int local=0x7f090011;
         public static final int my_trips=0x7f090002;
         public static final int new_spending=0x7f090000;
-        public static final int new_spent=0x7f09001b;
+        public static final int new_spent=0x7f09001c;
         public static final int new_trip=0x7f090001;
-        public static final int password=0x7f09000b;
-        public static final int remove_trip=0x7f09001c;
-        public static final int save=0x7f090019;
+        public static final int password=0x7f09000c;
+        public static final int remove_trip=0x7f09001d;
+        public static final int save=0x7f09001a;
         public static final int trip_type=0x7f090008;
-        public static final int typeTrip=0x7f090012;
-        public static final int user=0x7f09000a;
-        public static final int value=0x7f09000d;
+        public static final int txtv_id_version=0x7f09000a;
+        public static final int typeTrip=0x7f090013;
+        public static final int user=0x7f09000b;
+        public static final int value=0x7f09000e;
     }
     public static final class layout {
         public static final int dashboard=0x7f030000;
