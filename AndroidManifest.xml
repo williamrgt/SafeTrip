@@ -25,5 +25,6 @@
         <activity android:name=".SpentActivity"/>
         <activity android:name=".SpentListActivity"/>
         <activity android:name=".TripListActivity"/>
+        <activity android:name=".ConfigActivity"/>
     </application>
 </manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/string_preferences">
+        
+        <CheckBoxPreference
+            android:key="mode_trip"
+            android:summary="@string/string_mode_summary_trip"
+            android:title="@string/mode_trip"/>
+        
+        <EditTextPreference 
+            android:dialogTitle="@string/string_value_limit"
+            android:key="value_limit"
+            android:defaultValue="80"
+            android:summary="@string/string_value_limit_summary"
+            android:title="@string/string_notify_spents"/>
+        
+    </PreferenceCategory>
+</PreferenceScreen>

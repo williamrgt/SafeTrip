@@ -44,5 +44,12 @@
 	<string name="confirm">Are you sure?</string>
 	<string name="positive">Yes</string>
 	<string name="negative">No</string>
+	<string name="string_preferences">Preferences</string>
+	<string name="mode_trip">Trip Mode</string>
+	<string name="string_mode_summary_trip">Summary Trip</string>
+	<string name="string_value_limit">Set a limit value in (%)</string>
+	<string name="string_notify_spents">Notifications of spents</string>
+	<string name="string_value_limit_summary">Limit Value Summary</string>
+	<string name="string_keep_connected">Keep connected</string>
     
 </resources>

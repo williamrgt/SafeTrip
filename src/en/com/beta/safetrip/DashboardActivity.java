@@ -23,18 +23,18 @@ public class DashboardActivity extends Activity
 		{
 			//need to read about classes anonimas, page 80
 			case R.id.new_trip:
-			{
 				startActivity(new Intent(this, TripActivity.class));
 				break;
-			}
 			case R.id.new_spending:
-			{
 				startActivity(new Intent(this,SpentActivity.class));
-			}
+				break;
 			case R.id.my_trips:
-			{
-				startActivity(new Intent(getApplicationContext(), TripListActivity.class));
-			}
+				startActivity(new Intent(this, TripListActivity.class));
+				break;
+			case R.id.configs:
+				startActivity(new Intent(this, ConfigActivity.class));
+				break;
+				
 		}
 	}
 	@Override

@@ -47,6 +47,12 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"/>
     
+    <CheckBox 
+        android:id="@+id/id_keep_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_keep_connected"/>
+    
     <Button 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

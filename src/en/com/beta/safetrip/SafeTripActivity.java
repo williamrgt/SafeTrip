@@ -2,9 +2,12 @@ package en.com.beta.safetrip;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +18,8 @@ public class SafeTripActivity extends Activity
 	private EditText edtPassword;
 	private TextView txtVversion;
 	private String versionName;
+	private CheckBox keep_connected;
+	private static final String KEEP_CONNECTED = "keep_connected";
 	
 	@Override
 	public void onCreate(Bundle SavedInstanceState)
@@ -34,6 +39,12 @@ public class SafeTripActivity extends Activity
 		txtVversion.setText("Version: " + versionName);
 		edtLogin = (EditText) findViewById(R.id.user);
 		edtPassword = (EditText) findViewById(R.id.password);
+		keep_connected = (CheckBox) findViewById(R.id.id_keep_connected);
+		
+		SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+		boolean connected = preferences.getBoolean(KEEP_CONNECTED, false);
+		if(connected)
+			startActivity(new Intent(this, DashboardActivity.class));
 	}
 	
 	public void submitOnclick(View v)
@@ -43,6 +54,11 @@ public class SafeTripActivity extends Activity
 		
 		if(strUser.equals("leitor") && strPassword.equals("123"))
 		{
+			SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+			Editor EdiEdt = preferences.edit();
+			EdiEdt.putBoolean(KEEP_CONNECTED, keep_connected.isChecked());
+			EdiEdt.commit();
+			
 			//goes to another activity
 			startActivity(new Intent(this, DashboardActivity.class));
 		}
